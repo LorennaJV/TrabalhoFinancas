@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1 id="titulo">Controle de Finanças</h1>
+
+    <div id="forms">
+
+        <form id="FormCadastroSala">
+            <label for="salario">Salário:</label>
+            <input type="number" id="salario" required>
+            <button type="submit">Cadastrar Salário</button>
+        </form>
+
+        <form id="FormCadastroDesp">
+            <label for="datadesp">Data:</label>
+            <input type="date" id="datadesp" required>
+
+            <label for="nomedesp">Nome:</label>
+            <input type="text" id="nomedesp" required>
+
+            <label for="valordesp">Valor:</label>
+            <input type="number" id="valordesp" required>
+
+            <button type="submit">Cadastrar Despesas</button>
+        </form>
+
+    </div>
+
+    <h2 id="titulolista">Listagem Financeira</h2>
+    <button onclick="apagardesp()">Apagar Despesas</button>
+    <ul id="output"></ul>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <button onclick="exibirResumo()">Exibir Resumo</button>
+
+    <h2 id="tituloResumo">Resumo Financeiro</h2>
+
+    <div id="formsresumo"></div>
+
+    </div>
+
+
+    
+
+</body>
+</html>
